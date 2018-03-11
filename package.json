@@ -1,0 +1,39 @@
+{
+  "name": "mono-drive",
+  "version": "0.0.1",
+  "description": "Mono module to manage storage (fileSystem, S3)",
+  "main": "lib/",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "eslint lib/**",
+    "test": "npm run lint && nyc ava --verbose --serial test/ && nyc report --reporter=html",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gaetansenn/mono-drive"
+  },
+  "nyc": {
+    "include": [
+      "lib/"
+    ]
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@slynova/flydrive": "^0.1.6"
+  },
+  "devDependencies": {
+    "@terrajs/mono": "^0.8.0",
+    "mono-test-utils": "^1.2.3",
+    "ava": "^0.24.0",
+    "codecov": "^3.0.0",
+    "eslint": "^4.13.0",
+    "nyc": "^11.3.0"
+  },
+  "keywords": [
+    "mono",
+    "mono-module"
+  ]
+}
