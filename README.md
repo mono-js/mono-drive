@@ -49,7 +49,10 @@ module.exports = {
 In your `src/` files of your Mono project, you can access exposed methods like this:
 
 ```js
-const { get, getStream, exists, create, delete } = require('mono-drive')
+const MonoDrive = require('mono-drive')
+
+// Instanciate mono drive with local provider
+const { get, getStream, exists, create, delete } = new MonoDrive('local')
 ```
 
 ## Development / Contribution
