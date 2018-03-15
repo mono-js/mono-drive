@@ -1,7 +1,7 @@
 module.exports = {
 	mono: {
 		drive: {
-			local: {
+			fs: {
 				root: '' // Root folder for browsing files
 			}
 		}

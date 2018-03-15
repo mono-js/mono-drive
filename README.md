@@ -31,7 +31,7 @@ module.exports = {
 module.exports = {
   mono: {
     drive: {
-      local: {
+      fs: {
         root: '' //path of the root directory
       },
       s3: {
@@ -49,10 +49,7 @@ module.exports = {
 In your `src/` files of your Mono project, you can access exposed methods like this:
 
 ```js
-const MonoDrive = require('mono-drive')
-
-// Instanciate mono drive with local provider
-const { get, getStream, exists, create, delete } = new MonoDrive('local')
+const { get, put, del } = require('mono-drive')
 ```
 
 ## Development / Contribution
