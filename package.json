@@ -1,6 +1,6 @@
 {
   "name": "mono-drive",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Mono module to manage storage (fileSystem, S3)",
   "main": "lib/",
   "files": [
