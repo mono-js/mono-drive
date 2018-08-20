@@ -2,7 +2,7 @@ const test = require('ava')
 const { join } = require('path')
 const isStream = require('is-stream');
 
-const { waitForEvent } = require('@terrajs/mono').utils
+const { waitForEvent } = require('mono-utils')
 const { start, stop } = require('mono-test-utils')
 
 const monoModule = require('../lib/index')
